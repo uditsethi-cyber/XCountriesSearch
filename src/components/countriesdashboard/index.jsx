@@ -27,6 +27,7 @@ const CountryDashboard = () => {
       setFilteredCountries(jsonResponse || []);
     } catch (error) {
       setCountries([]);
+      console.log(error);
     }
   };
   useEffect(() => {

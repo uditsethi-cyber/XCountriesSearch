@@ -4,7 +4,7 @@ import "./styles/countrydashboard.css";
 
 const CountryCard = ({ country }) => {
   return (
-    <Grid item size={{ xs: 4, md: 3, lg: 2 }} className={"country-card"}>
+    <Grid item size={{ xs: 4, md: 3, lg: 1.4 }} className={"countryCard"}>
       <img src={country?.png} />
       <span>{country?.common}</span>
     </Grid>
