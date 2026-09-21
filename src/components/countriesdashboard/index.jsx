@@ -12,9 +12,8 @@ const CountryDashboard = () => {
     const searchVal = e.target.value;
     setSearchInput(searchVal);
     const filterCountries = countries.filter((item) =>
-      item?.common?.includes(searchVal),
+      item?.common?.toLowerCase()?.includes(searchVal?.toLowerCase()),
     );
-    console.log(filterCountries);
     setFilteredCountries(filterCountries);
   };
   const fetchCountries = async () => {
